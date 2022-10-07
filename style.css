@@ -1,0 +1,821 @@
+.hero{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-right: 1rem;
+}
+
+.info_hero{
+    width: 100%;
+    height: auto;
+    background: url(img/Assets/BG_PERROTON.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-center{
+    color: white;
+    width: 100%;
+    padding-top: 1em ;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-style{
+    text-transform: uppercase;
+    background-color: #ED1C24!important;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.centered {
+    position: absolute;
+    top: 123%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+.contador{
+    position: relative;
+  text-align: center;
+  color: white;
+}
+
+.contador-box{
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
+}
+
+.pasos-perroton{
+    position: relative;
+  text-align: center;
+  color: white;
+}
+
+.info-centered{
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-centeredd{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.accordion-button{
+    background-color: #007D39;
+    color: white;
+}
+
+
+/*  ======== barra de progreso ======= */
+
+.main-barra-img{
+    position: relative;
+    }
+    
+    .barra_progreso{
+        position: absolute;
+        height: 30px;
+        width: 59%;
+        margin: 0px auto;
+        box-shadow: inset 6px 6px 12px #303030;
+        background-color:#000000;
+        overflow: hidden;
+        border-radius: var(--border_r);
+        bottom: 80px;
+        left: 310px;
+    
+        /* background-color: red; */
+    }
+    
+    :root{
+        --border_r:20px;
+    }
+    
+    .progreso{
+        height: 100% ;
+        width: 0%;
+        background-color: #05F283;
+        box-shadow: 0 0 10px #ffffff,
+                0 0 20px #025930;
+        display: block;
+        border-radius: var(--border_r);
+    }
+    
+    #porcentaje{
+    position: absolute;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* text-align: center; */
+    /* transform: translateY(100px); */
+    color: white;
+    bottom: 76px;
+    z-index: 1;
+    
+    }
+
+/* ======= MEDIA QUERYS ======== */
+
+@media screen and (max-width: 400px) {
+    .desktop-hero{display:none;}
+    .info-centeredd{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    .bubble-count{
+        width:35%!important;
+        position: relative; 
+        top: 50%!important;
+    }
+    .centered {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px!important;
+    }
+    .contador-box-h1{
+        font-size: 20px!important;
+    }
+    .contador-box-h2{
+        font-size: 30px!important;
+    }
+    .pasos-perrton-text{
+        font-size: 0.8em!important;
+    }
+    .barra_progreso{
+        width: 56%;
+        height: 10px;
+        bottom: 20px;
+        left: 88px;
+    
+    }
+
+    #porcentaje{
+        bottom: 19px;
+        font-size: 0.5em;        
+    }
+
+    
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .desktop-hero{display:none;}
+    .info-centeredd{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .bubble-count{
+        width:35%!important;
+        position: relative; 
+        top: 50%!important;
+    }
+    .centered {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px!important;
+    }
+    .contador-box-h1{
+        font-size: 20px!important;
+    }
+    .contador-box-h2{
+        font-size: 30px!important;
+    }
+    .pasos-perrton-text{
+        font-size: 0.8em!important;
+    }
+    .barra_progreso{
+        width: 56%;
+        height: 10px;
+        bottom: 20px;
+        left: 88px;
+    
+    }
+
+    #porcentaje{
+        bottom: 19px;
+        font-size: 0.5em;        
+    }
+      
+}
+
+@media screen and (min-width: 420px) and (max-width: 440px) {
+    .barra_progreso{
+        width: 58%;
+        height: 10px;
+        bottom: 22px;
+        left: 88px;
+    
+    }
+
+    #porcentaje{
+        bottom: 20px;
+        font-size: 0.5em;        
+    }
+
+}
+
+@media screen and (min-width: 440px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 59%;
+        height: 10px;
+        bottom: 24px;
+        left: 90px;
+    
+    }
+
+    #porcentaje{
+        bottom: 22px;
+        font-size: 0.5em;        
+    }
+}
+
+@media screen and (min-width: 470px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 58%;
+        height: 10px;
+        bottom: 27px;
+        left: 100px;
+    
+    }
+
+    #porcentaje{
+        bottom: 24px;
+        font-size: 0.5em;        
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 58%;
+        height: 10px;
+        bottom: 28px;
+        left: 104px;
+    
+    }
+
+    #porcentaje{
+        bottom: 27px;
+        font-size: 0.5em;        
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 59%;
+        height: 10px;
+        bottom: 30px;
+        left: 104px;
+    
+    }
+
+    #porcentaje{
+        bottom: 29px;
+        font-size: 0.5em;        
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 59%;
+        height: 10px;
+        bottom: 33px;
+        left: 112px;
+    
+    }
+
+    #porcentaje{
+        bottom: 31px;
+        font-size: 0.5em;        
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 59%;
+        height: 10px;
+        bottom: 35px;
+        left: 118px;
+    
+    }
+
+    #porcentaje{
+        bottom: 33px;
+        font-size: 0.5em;        
+    }
+}
+
+
+@media screen and (min-width: 625px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 59%;
+        height: 12px;
+        bottom: 38px;
+        left: 130px;
+    
+    }
+
+    #porcentaje{
+        bottom: 38px;
+        font-size: 0.5em;        
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 59%;
+        height: 12px;
+        bottom: 40px;
+        left: 140px;
+    
+    }
+
+    #porcentaje{
+        bottom: 40px;
+        font-size: 0.5em;        
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 720px) {
+    .barra_progreso{
+        width: 59%;
+        height: 15px;
+        bottom: 40px;
+        left: 145px;
+    
+    }
+
+    #porcentaje{
+        bottom: 42px;
+        font-size: 0.5em;        
+    }
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 18px;
+        bottom: 40px;
+        left: 150px;
+    
+    }
+
+    #porcentaje{
+        bottom: 42px;
+        font-size: 0.5em;        
+    }
+      
+}
+
+@media screen and (min-width: 750px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 19px;
+        bottom: 40px;
+        left: 157px;
+    
+    }
+
+    #porcentaje{
+        bottom: 44px;
+        font-size: 0.5em;        
+    }
+      
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 20px;
+        bottom: 42px;
+        left: 158px;
+    
+    }
+
+    #porcentaje{
+        bottom: 45px;
+        font-size: 0.5em;        
+    }
+      
+}
+
+@media screen and (min-width: 790px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 20px;
+        bottom: 45px;
+        left: 164px;
+    
+    }
+
+    #porcentaje{
+        bottom: 45px;
+        font-size: 0.8em;        
+    }
+      
+}
+
+
+
+@media screen and (min-width: 820px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 24px;
+        bottom: 45px;
+        left: 170px;
+    
+    }
+
+    #porcentaje{
+        bottom: 47px;
+        font-size: 0.7em;        
+    }
+      
+}
+
+@media screen and (min-width: 850px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 26px;
+        bottom: 45px;
+        left: 177px;
+    
+    }
+
+    #porcentaje{
+        bottom: 48px;
+        font-size: 0.9em;        
+    }
+      
+}
+
+@media screen and (min-width: 880px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 28px;
+        bottom: 45px;
+        left: 184px;
+    
+    }
+
+    #porcentaje{
+        bottom: 44px;
+        font-size: 0.9em;        
+    }
+      
+}
+
+@media screen and (min-width: 920px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 30px;
+        bottom: 47px;
+        left: 192px;
+    
+    }
+
+    #porcentaje{
+        bottom: 46px;
+        font-size: 1.2em;         
+    }
+      
+}
+
+@media screen and (min-width: 950px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 32px;
+        bottom: 47px;
+        left: 200px;
+    
+    }
+
+    #porcentaje{
+        bottom: 50px;
+        font-size: 1.2em;        
+    }
+      
+}
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 59%;
+        height: 34px;
+        bottom: 47px;
+        left: 205px;
+    
+    }
+
+    #porcentaje{
+        bottom: 50px;
+        font-size: 1.2em;     
+    }
+      
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 34px;
+        bottom: 50px;
+        left: 210px;
+    
+    }
+
+    #porcentaje{
+        bottom: 53px;
+        font-size: 1.2em;       
+    }
+      
+}
+
+
+
+@media screen and (min-width: 1070px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 35px;
+        bottom: 55px;
+        left: 218px;
+    
+    }
+
+    #porcentaje{
+        bottom: 58px;
+        font-size: 1.2em;       
+    }
+      
+}
+
+@media screen and (min-width: 1130px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 61%;
+        height: 35px;
+        bottom: 58px;
+        left: 225px;
+    
+    }
+
+    #porcentaje{
+        bottom: 62px;
+        font-size: 1.2em;        
+    }
+      
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 37px;
+        bottom: 62px;
+        left: 245px;
+    
+    }
+
+    #porcentaje{
+        bottom: 67px;
+        font-size: 1.2em;       
+    }
+      
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 37px;
+        bottom: 67px;
+        left: 260px;
+    
+    }
+
+    #porcentaje{
+        bottom: 72px;
+        font-size: 1.2em;       
+    }
+}
+
+@media screen and (min-width: 1340px) and (max-width: 1440px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 37px;
+        bottom: 75px;
+        left: 270px;
+    
+    }
+
+    #porcentaje{
+        bottom: 82px;
+        font-size: 1.2em;      
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1440px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 38px;
+        bottom: 78px;
+        left: 285px;
+    
+    }
+
+    #porcentaje{
+        bottom: 85px;
+        font-size: 1.2em;        
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 39px;
+        bottom: 80px;
+        left: 295px;
+    
+    }
+
+    #porcentaje{
+        bottom: 85px;
+        font-size: 1.2em;      
+    }
+    
+}
+
+@media screen and (min-width: 1510px) and (max-width: 1920px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 40px;
+        bottom: 90px;
+        left: 305px;
+    
+    }
+
+    #porcentaje{
+        bottom: 88px;
+        font-size: 1.5em;        
+    }
+    
+}
+
+@media screen and (min-width: 1580px) and (max-width: 1920px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 40px;
+        bottom: 90px;
+        left: 320px;
+    
+    }
+
+    #porcentaje{
+        bottom: 92px;
+        font-size: 1.5em;        
+    }
+    
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 40px;
+        bottom: 95px;
+        left: 340px;
+    
+    }
+
+    #porcentaje{
+        bottom: 98px;
+        font-size: 1.5em;        
+    }
+    
+}
+
+@media screen and (min-width: 1750px) and (max-width: 1920px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 48px;
+        bottom: 97px;
+        left: 360px;
+    
+    }
+
+    #porcentaje{
+        bottom: 104px;
+        font-size: 1.5em;        
+    }
+    
+}
+
+@media screen and (min-width: 1850px) and (max-width: 1920px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 55px;
+        bottom: 97px;
+        left: 375px;
+    
+    }
+
+    #porcentaje{
+        bottom: 108px;
+        font-size: 1.5em;        
+    }
+    
+}
+
+@media screen and (min-width: 1921px) {
+    .mobile-hero{display:none;}
+
+    .barra_progreso{
+        width: 60%;
+        height: 60px;
+        bottom: 97px;
+        left: 385px;
+    
+    }
+
+    #porcentaje{
+        bottom: 110px;
+        font-size: 1.7em;        
+    }
+}
+
+
+
